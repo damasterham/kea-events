@@ -1,0 +1,63 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Node_KeaEvents</Name>
+    <RootNamespace>Node_KeaEvents</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1c5105fa-f393-419e-b3c2-f0d572281333</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="home.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="wwwroot\css\flexbox\index.html" />
+    <Content Include="wwwroot\css\flexbox\style.css" />
+    <Content Include="wwwroot\css\kea-events - oldschool.css" />
+    <Content Include="wwwroot\css\kea-events.css" />
+    <Content Include="wwwroot\img\bridge.jpg" />
+    <Content Include="wwwroot\img\flexbox.zip" />
+    <Content Include="wwwroot\img\graph.png" />
+    <Content Include="wwwroot\img\img_placeholder.jpeg" />
+    <Content Include="wwwroot\img\kea_logo.png" />
+    <Content Include="wwwroot\img\map.jpg" />
+    <Content Include="wwwroot\img\video_placeholder.jpg" />
+    <Content Include="wwwroot\keaevents.html" />
+    <Content Include="wwwroot\notindex.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="wwwroot\kea_events_oldschool.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\css\flexbox\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
