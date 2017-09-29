@@ -49,7 +49,7 @@ app.get('/msg', function (req, res)
 });
 
 
-app.listen(process.env.PORT, function ()
+app.listen(process.env.PORT || 5000, function ()
 {
-    console.log('App listen at port 4200');
+    //console.log('App listen at port 4200');
 });
